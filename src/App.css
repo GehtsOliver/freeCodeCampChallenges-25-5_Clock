@@ -1,0 +1,40 @@
+.App{
+    height: 100%;
+    width: 100%;
+    background-image: url("bg-tomato.svg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    background-color: #ffffff;
+    min-width: 320px;
+    min-height: 500px;
+    border-radius: 2rem;
+    box-shadow: 0 1rem .5rem 0 red;
+    transition: box-shadow 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+}
+
+.Card:hover{
+    box-shadow: 0 1rem 1rem 1rem rgb(182, 1, 1);
+}
+
+.Tomato{
+    width: 5rem;
+}
+
+
+@media Screen and (min-width: 600px){
+    .Card{
+        min-width: 500px;
+        min-height: 700px;
+    }
+}
